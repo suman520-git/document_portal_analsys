@@ -3,8 +3,8 @@
 
 import io
 from pathlib import Path
-from src.document_compare.data_ingestion import DocumentIngestion
-from src.document_compare.document_comparator import DocumentComparatorLLM
+from src.document_chat.retrieval import DocumentIngestion
+from src.document_chat.document_comparator import DocumentComparatorLLM
 
 # ---- Setup: Load local PDF files as if they were "uploaded" ---- #
 def load_fake_uploaded_file(file_path: Path):

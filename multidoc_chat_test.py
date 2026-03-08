@@ -2,8 +2,8 @@
 ## testing for multidoc chat
 import sys
 from pathlib import Path
-from src.multi_document_chat.data_ingestion import DocumentIngestor
-from src.multi_document_chat.retrieval import ConversationalRAG
+from src.document_compare.document_comparator import DocumentIngestor
+from src.document_compare.retrieval import ConversationalRAG
 
 def test_document_ingestion_and_rag():
     try:

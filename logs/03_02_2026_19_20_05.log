@@ -1,0 +1,17 @@
+{"available_keys": ["GOOGLE_API_KEY", "GROQ_API_KEY"], "timestamp": "2026-03-02T13:50:06.339805Z", "level": "info", "event": "Environment variables validated"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-03-02T13:50:06.342719Z", "level": "info", "event": "Configuration loaded successfully"}
+{"timestamp": "2026-03-02T13:50:06.343723Z", "level": "info", "event": "Loading embedding model..."}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+{"available_keys": ["GOOGLE_API_KEY", "GROQ_API_KEY"], "timestamp": "2026-03-02T13:50:06.469887Z", "level": "info", "event": "Environment variables validated"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-03-02T13:50:06.483297Z", "level": "info", "event": "Configuration loaded successfully"}
+{"timestamp": "2026-03-02T13:50:06.484297Z", "level": "info", "event": "Loading LLM..."}
+{"provider": "groq", "model": "llama-3.3-70b-versatile", "temperature": 0, "max_tokens": 2048, "timestamp": "2026-03-02T13:50:06.484297Z", "level": "info", "event": "Loading LLM"}
+{"class_name": "ChatGroq", "timestamp": "2026-03-02T13:50:06.658376Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "test_conversational_rag", "timestamp": "2026-03-02T13:50:06.659299Z", "level": "info", "event": "Created history-aware retriever"}
+{"session_id": "test_conversational_rag", "timestamp": "2026-03-02T13:50:06.661377Z", "level": "info", "event": "Created RAG chain"}
+{"session_id": "test_conversational_rag", "timestamp": "2026-03-02T13:50:06.664383Z", "level": "info", "event": "Wrapped chain with message history"}
+{"session_id": "test_conversational_rag", "timestamp": "2026-03-02T13:50:06.673298Z", "level": "info", "event": "New chat session history created"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "test_conversational_rag", "user_input": "What is the significance of the attention mechanism? can you explain it in simple terms?", "answer_preview": "The attention mechanism allows the model to focus on specific parts of the input sequence when generating the output sequence, rather than relying on ", "timestamp": "2026-03-02T13:50:08.140818Z", "level": "info", "event": "Chain invoked successfully"}

@@ -1,0 +1,25 @@
+{"available_keys": ["GOOGLE_API_KEY", "GROQ_API_KEY"], "timestamp": "2026-03-04T19:33:05.966142Z", "level": "info", "event": "Environment variables validated"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-03-04T19:33:05.969227Z", "level": "info", "event": "Configuration loaded successfully"}
+{"temp_base": "data\\multi_doc_chat", "faiss_base": "faiss_index", "session_id": "session_20260304_193305_67839ee2", "temp_path": "data\\multi_doc_chat\\session_20260304_193305_67839ee2", "faiss_path": "faiss_index\\session_20260304_193305_67839ee2", "timestamp": "2026-03-04T19:33:05.970145Z", "level": "info", "event": "DocumentIngestor initialized"}
+{"filename": "data\\multi_doc_chat\\market_analysis_report.docx", "saved_as": "data\\multi_doc_chat\\session_20260304_193305_67839ee2\\a8c7f7bb.docx", "session_id": "session_20260304_193305_67839ee2", "timestamp": "2026-03-04T19:33:05.971144Z", "level": "info", "event": "File saved for ingestion"}
+{"filename": "data\\multi_doc_chat\\NIPS-2017-attention-is-all-you-need-Paper.pdf", "saved_as": "data\\multi_doc_chat\\session_20260304_193305_67839ee2\\f29742b2.pdf", "session_id": "session_20260304_193305_67839ee2", "timestamp": "2026-03-04T19:33:05.987776Z", "level": "info", "event": "File saved for ingestion"}
+{"filename": "data\\multi_doc_chat\\sample.pdf", "saved_as": "data\\multi_doc_chat\\session_20260304_193305_67839ee2\\26bcf848.pdf", "session_id": "session_20260304_193305_67839ee2", "timestamp": "2026-03-04T19:33:06.546762Z", "level": "info", "event": "File saved for ingestion"}
+{"filename": "data\\multi_doc_chat\\state_of_the_union.txt", "saved_as": "data\\multi_doc_chat\\session_20260304_193305_67839ee2\\3a737816.txt", "session_id": "session_20260304_193305_67839ee2", "timestamp": "2026-03-04T19:33:12.479169Z", "level": "info", "event": "File saved for ingestion"}
+{"total_docs": 90, "session_id": "session_20260304_193305_67839ee2", "timestamp": "2026-03-04T19:33:12.480169Z", "level": "info", "event": "All documents loaded"}
+{"total_chunks": 483, "session_id": "session_20260304_193305_67839ee2", "timestamp": "2026-03-04T19:33:12.496167Z", "level": "info", "event": "Documents split into chunks"}
+{"timestamp": "2026-03-04T19:33:12.496167Z", "level": "info", "event": "Loading embedding model..."}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+{"path": "faiss_index\\session_20260304_193305_67839ee2", "session_id": "session_20260304_193305_67839ee2", "timestamp": "2026-03-04T19:33:35.164426Z", "level": "info", "event": "FAISS index saved to disk"}
+{"session_id": "session_20260304_193305_67839ee2", "timestamp": "2026-03-04T19:33:35.164426Z", "level": "info", "event": "FAISS retriever created and ready to use"}
+{"available_keys": ["GOOGLE_API_KEY", "GROQ_API_KEY"], "timestamp": "2026-03-04T19:33:35.167426Z", "level": "info", "event": "Environment variables validated"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-03-04T19:33:35.169514Z", "level": "info", "event": "Configuration loaded successfully"}
+{"timestamp": "2026-03-04T19:33:35.170426Z", "level": "info", "event": "Loading LLM..."}
+{"provider": "groq", "model": "llama-3.3-70b-versatile", "temperature": 0, "max_tokens": 2048, "timestamp": "2026-03-04T19:33:35.170426Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "test_multi_doc_chat", "timestamp": "2026-03-04T19:33:35.446195Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "test_multi_doc_chat", "timestamp": "2026-03-04T19:33:35.447199Z", "level": "info", "event": "LCEL graph built successfully"}
+{"session_id": "test_multi_doc_chat", "timestamp": "2026-03-04T19:33:35.447199Z", "level": "info", "event": "ConversationalRAG initialized"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "test_multi_doc_chat", "user_input": "what is President Zelenskyy said in their speech in parliament?", "answer_preview": "According to the text, President Zelenskyy said in his speech to the European Parliament, \"Light will win over darkness.\"", "timestamp": "2026-03-04T19:33:36.518250Z", "level": "info", "event": "Chain invoked successfully"}
