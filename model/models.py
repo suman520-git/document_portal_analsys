@@ -3,26 +3,21 @@ from typing import List, Union
 from enum import Enum
 
 class Metadata(BaseModel):
-    Summary: List[str] 
+    Summary: List[str]
     Title: str
     Author: List[str]
-    DateCreated: str   
+    DateCreated: str
     LastModifiedDate: str
     Publisher: str
     Language: str
     PageCount: Union[int, str]  # Can be "Not Available"
     SentimentTone: str
-
-
 class ChangeFormat(BaseModel):
     Page: str
-    changes: str
-
+    Changes: str
 
 class SummaryResponse(RootModel[list[ChangeFormat]]):
-    pass    
-
-
+    pass
 class PromptType(str, Enum):
     DOCUMENT_ANALYSIS = "document_analysis"
     DOCUMENT_COMPARISON = "document_comparison"
