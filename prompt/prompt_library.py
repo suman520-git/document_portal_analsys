@@ -11,6 +11,8 @@ Analyze this document:
 {document_text}
 """)
 
+
+##########################################################################
 # Prompt for document comparison
 document_comparison_prompt = ChatPromptTemplate.from_template("""
 You will be provided with content from two PDFs. Your tasks are as follows:
@@ -29,6 +31,8 @@ Your response should follow this format:
 {format_instruction}
 """)
 
+
+##########################################################################
 # Prompt for contextual question rewriting
 contextualize_question_prompt = ChatPromptTemplate.from_messages([
     ("system", (
@@ -40,6 +44,9 @@ contextualize_question_prompt = ChatPromptTemplate.from_messages([
     ("human", "{input}"),
 ])
 
+
+
+##########################################################################
 # Prompt for answering based on context
 context_qa_prompt = ChatPromptTemplate.from_messages([
     ("system", (
@@ -51,6 +58,8 @@ context_qa_prompt = ChatPromptTemplate.from_messages([
     ("human", "{input}"),
 ])
 
+
+##########################################################################
 # Central dictionary to register prompts
 PROMPT_REGISTRY = {
     "document_analysis": document_analysis_prompt,
