@@ -278,15 +278,19 @@ step.1 uvicorn api.main:app --port 8080 --reload
 
 ```
 ## Application UI(For Document Analsys)
+
 ![image alt](https://github.com/suman520-git/document_portal_analsys/blob/main/Documental_Analsys.png?raw=true)
 
-```
+
+
 ## Application UI(For Document Analsys)
 ![image alt](https://github.com/suman520-git/document_portal_analsys/blob/main/Documents_comparsion.png?raw=true)
 
+
 ## Application UI(For Document Analsys)
 ![image alt](https://github.com/suman520-git/document_portal_analsys/blob/main/Chat_with_Documents.png?raw=true)
-
+```
+```
 ### 4.  Dockerization
 ```bash
 # Build Docker Image
