@@ -1,5 +1,4 @@
 # Document Portal Analsys
-
 1.  Summarizattion of the data: A system ,it summarises the uploaded pdf file  by the user.
 
 2.  Documents Comparision: When two files  reference and modified files upload to application ,it returns the  
@@ -287,7 +286,7 @@ step.1 uvicorn api.main:app --port 8080 --reload
 ![image alt](https://github.com/suman520-git/document_portal_analsys/blob/main/Documents_comparsion.png?raw=true)
 
 
-## Application UI(For Document Analsys)
+## Application UI(For Chat with Documents)
 ![image alt](https://github.com/suman520-git/document_portal_analsys/blob/main/Chat_with_Documents.png?raw=true)
 ```
 ```
