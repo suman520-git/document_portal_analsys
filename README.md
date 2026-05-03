@@ -49,83 +49,198 @@
 
 ## Project Structure
 ```
-ecomm-prod-assistant                             
-├─ data                                          
-│  └─ product_reviews.csv                        
-├─ .github                                        
-│  └─ workflows                                  
-│     ├─ deploy.yml                              
-│     └─ infra.yml                               
-├─ infra                                         
-│  └─ eks-with-ecr.yaml                          
-├─ k8                                            
-│  ├─ deployment.yaml                            
-│  └─ service.yaml                               
-├─ notebook                                      
-│  └─ test.ipynb                                 
-├─ prod_assistant                                
-│  ├─ config                                     
-│  │  ├─ config.yaml                             
-│  │  └─ __init__.py                             
-│  ├─ etl                                        
-│  │  ├─ logs                                    
-│  │  │  └─ 11_09_2025_00_56_25.log              
-│  │  ├─ data_ingestion.py                       
-│  │  ├─ data_scrapper.py                        
-│  │  └─ __init__.py                             
-│  ├─ evaluation                                 
-│  │  ├─ ragas_eval.py                           
-│  │  └─ __init__.py                             
-│  ├─ exception                                  
-│  │  ├─ custom_exception.py                     
-│  │  └─ __init__.py                             
-│  ├─ logger                                     
-│  │  ├─ custom_logger.py                        
-│  │  └─ __init__.py                             
-│  ├─ mcp_servers                                
-│  │  ├─ client.py                               
-│  │  ├─ product_search_server.py                
-│  │  └─ __init__.py                             
-│  ├─ prompt_library                             
-│  │  ├─ prompts.py                              
-│  │  └─ __init__.py                             
-│  ├─ retriever                                  
-│  │  ├─ retrieval.py                            
-│  │  └─ __init__.py                             
-│  ├─ router                                     
-│  │  ├─ main.py                                 
-│  │  └─ __init__.py                             
-│  ├─ utils                                      
-│  │  ├─ config_loader.py                        
-│  │  ├─ model_loader.py                         
-│  │  └─ __init__.py                             
-│  ├─ workflow                                   
-│  │  ├─ agentic_rag_workflow.py                 
-│  │  ├─ agentic_workflow_with_mcp.py            
-│  │  ├─ agentic_workflow_with_mcp_websearch.py  
-│  │  ├─ normal_generation_workflow.py           
-│  │  └─ __init__.py                             
-│  └─ __init__.py                                
-├─ static                                        
-│  ├─ f6634145-b9d9-4ea1-b5e5-cb705192c6fd.png   
-│  └─ style.css                                  
-├─ templates                                     
-│  └─ chat.html                                  
-├─ test                                          
-│  └─ __init__.py                                
-├─ corrective Rag.png                            
-├─ Dockerfile                                    
-├─ get_lib_versions.py                           
-├─ main.py                                       
-├─ pyproject.toml                                
-├─ README.md                                     
-├─ requirements.txt                              
-├─ scrapper_ui.py                                
-└─ setup.py                                      
-                     
-
-
-
+document_portal_analsys                                    
+├─ api                                                     
+│  ├─ __pycache__                                          
+│  │  └─ main.cpython-311.pyc                              
+│  └─ main.py                                              
+├─ archive                                                 
+│  └─ src                                                  
+│     ├─ document_analyzer                                 
+│     │  ├─ __pycache__                                    
+│     │  │  ├─ data_analysis.cpython-311.pyc               
+│     │  │  ├─ data_ingestion.cpython-311.pyc              
+│     │  │  └─ __init__.cpython-311.pyc                    
+│     │  ├─ data_analysis.py                               
+│     │  ├─ data_ingestion.py                              
+│     │  └─ __init__.py                                    
+│     ├─ document_compare                                  
+│     │  ├─ __pycache__                                    
+│     │  │  ├─ data_ingestion.cpython-311.pyc              
+│     │  │  ├─ document_comparator.cpython-311.pyc         
+│     │  │  └─ __init__.cpython-311.pyc                    
+│     │  ├─ data_ingestion.py                              
+│     │  ├─ document_comparator.py                         
+│     │  └─ __init__.py                                    
+│     ├─ multi_document_chat                               
+│     │  ├─ __pycache__                                    
+│     │  │  ├─ data_ingestion.cpython-311.pyc              
+│     │  │  ├─ retrieval.cpython-311.pyc                   
+│     │  │  └─ __init__.cpython-311.pyc                    
+│     │  ├─ data_ingestion.py                              
+│     │  ├─ retrieval.py                                   
+│     │  └─ __init__.py                                    
+│     ├─ single_document_chat                              
+│     │  ├─ __pycache__                                    
+│     │  │  ├─ data_ingestion.cpython-311.pyc              
+│     │  │  ├─ retrieval.cpython-311.pyc                   
+│     │  │  └─ __init__.cpython-311.pyc                    
+│     │  ├─ data_ingestion.py                              
+│     │  ├─ retrieval.py                                   
+│     │  └─ __init__.py                                    
+│     ├─ __pycache__                                       
+│     │  └─ __init__.cpython-311.pyc                       
+│     └─ __init__.py                                       
+├─ config                                                  
+│  └─ config.yaml                                          
+├─ data                                                    
+│  ├─ document_analysis                                    
+│  │  ├─ session_20260502_163648_1bb11f69                  
+│  │  │  └─ NIPS-2017-attention-is-all-you-need-Paper.pdf  
+│  │  ├─ session_20260502_212952_e7155ed4                  
+│  │  │  └─ Long_Report_V2.pdf                             
+│  │  ├─ session_20260502_213637_eee37d60                  
+│  │  │  └─ sample.pdf                                     
+│  │  └─ sample.pdf                                        
+│  ├─ document_compare                                     
+│  │  ├─ session_20260502_212033_2161fb0f                  
+│  │  │  ├─ Long_Report_V1.pdf                             
+│  │  │  └─ Long_Report_V2.pdf                             
+│  │  ├─ session_20260502_213708_70bf1cfe                  
+│  │  │  ├─ Long_Report_V1.pdf                             
+│  │  │  └─ Long_Report_V2.pdf                             
+│  │  ├─ Long_Report_V1.pdf                                
+│  │  └─ Long_Report_V2.pdf                                
+│  ├─ madhu                                                
+│  │  ├─ 3a6dbe27.pdf                                      
+│  │  ├─ 40007ef8.pdf                                      
+│  │  ├─ 62c8c9bd.pdf                                      
+│  │  └─ 7ade7972.pdf                                      
+│  ├─ multi_doc_chat                                       
+│  │  ├─ market_analysis_report.docx                       
+│  │  ├─ NIPS-2017-attention-is-all-you-need-Paper.pdf     
+│  │  ├─ sample.pdf                                        
+│  │  └─ state_of_the_union.txt                            
+│  ├─ single_document_chat                                 
+│  │  └─ NIPS-2017-attention-is-all-you-need-Paper.pdf     
+│  └─ 06c96159.txt                                         
+├─ document_portal_analsys.egg-info                        
+│  ├─ dependency_links.txt                                 
+│  ├─ PKG-INFO                                             
+│  ├─ SOURCES.txt                                          
+│  └─ top_level.txt                                        
+├─ exception                                               
+│  ├─ __pycache__                                          
+│  │  ├─ custom_exception.cpython-311.pyc                  
+│  │  └─ __init__.cpython-311.pyc                          
+│  ├─ custom_exception.py                                  
+│  ├─ custom_exception_archive.py                          
+│  └─ __init__.py                                          
+├─ faiss_index                                             
+│  ├─ madhu                                                
+│  │  ├─ index.faiss                                       
+│  │  ├─ index.pkl                                         
+│  │  └─ ingested_meta.json                                
+│  ├─ index.faiss                                          
+│  ├─ index.pkl                                            
+│  └─ ingested_meta.json                                   
+├─ infrastructure                                          
+│  └─ document-portal-cf.yaml                              
+├─ logger                                                  
+│  ├─ __pycache__                                          
+│  │  ├─ custom_logger.cpython-311.pyc                     
+│  │  └─ __init__.cpython-311.pyc                          
+│  ├─ custom_logger.py                                     
+│  └─ __init__.py                                          
+├─ logs                                                    
+│  ├─ 03_15_2026_22_10_15.log                              
+│                             
+│                             
+│                              
+│                              
+│                             
+├─ model                                                   
+│  ├─ __pycache__                                          
+│  │  └─ models.cpython-311.pyc                            
+│  └─ models.py                                            
+├─ notebook                                                
+│  ├─ data                                                 
+│  │  └─ sample.pdf                                        
+│  ├─ logs                                                 
+│  │  ├─ 03_07_2026_14_06_03.log                           
+│  │                           
+│  ├─ exception_experiment.ipynb                           
+│  ├─ experiments.ipynb                                    
+│  ├─ Exp_topics.ipynb                                     
+│  └─ logging_experiment.ipynb                             
+├─ prompt                                                  
+│  ├─ __pycache__                                          
+│  │  ├─ prompt_library.cpython-311.pyc                    
+│  │  └─ __init__.cpython-311.pyc                          
+│  ├─ prompt_library.py                                    
+│  └─ __init__.py                                          
+├─ src                                                     
+│  ├─ document_analyzer                                    
+│  │  ├─ __pycache__                                       
+│  │  │  ├─ data_analysis.cpython-311.pyc                  
+│  │  │  └─ __init__.cpython-311.pyc                       
+│  │  ├─ data_analysis.py                                  
+│  │  └─ __init__.py                                       
+│  ├─ document_chat                                        
+│  │  ├─ __pycache__                                       
+│  │  │  ├─ retrieval.cpython-311.pyc                      
+│  │  │  └─ __init__.cpython-311.pyc                       
+│  │  ├─ retrieval.py                                      
+│  │  └─ __init__.py                                       
+│  ├─ document_compare                                     
+│  │  ├─ __pycache__                                       
+│  │  │  ├─ document_comparator.cpython-311.pyc            
+│  │  │  └─ __init__.cpython-311.pyc                       
+│  │  ├─ document_comparator.py                            
+│  │  └─ __init__.py                                       
+│  ├─ document_ingestion                                   
+│  │  ├─ __pycache__                                       
+│  │  │  ├─ data_ingestion.cpython-311.pyc                 
+│  │  │  └─ __init__.cpython-311.pyc                       
+│  │  ├─ data_ingestion.py                                 
+│  │  └─ __init__.py                                       
+│  ├─ __pycache__                                          
+│  │  └─ __init__.cpython-311.pyc                          
+│  └─ __init__.py                                          
+├─ static                                                  
+│  └─ style.css                                            
+├─ templates                                               
+│  └─ index.html                                           
+├─ tests                                                   
+│  ├─ __pycache__                                          
+│  │  ├─ test_unit_cases.cpython-311-pytest-8.4.1.pyc      
+│  │  └─ __init__.cpython-311.pyc                          
+│  ├─ test_unit_cases.py                                   
+│  └─ __init__.py                                          
+├─ utils                                                   
+│  ├─ __pycache__                                          
+│  │  ├─ config_loader.cpython-311.pyc                     
+│  │  ├─ document_ops.cpython-311.pyc                      
+│  │  ├─ file_io.cpython-311.pyc                           
+│  │  ├─ model_loader.cpython-311.pyc                      
+│  │  └─ __init__.cpython-311.pyc                          
+│  ├─ config_loader.py                                     
+│  ├─ document_ops.py                                      
+│  ├─ file_io.py                                           
+│  ├─ model_loader.py                                      
+│  └─ __init__.py                                          
+├─ app.py                                                  
+├─ Dockerfile                                              
+├─ documents_comparator_test.py                            
+├─ document_analyzer_test.py                               
+├─ document_chat_test.py                                   
+├─ main_archive.py                                         
+├─ multidoc_chat_test.py                                   
+├─ README.md                                               
+├─ requirements.txt                                        
+├─ setup.py                                                
+└─ versions.py                                             
+                                   
 ```
 
 ## 🚀 Quick Start
