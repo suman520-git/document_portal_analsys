@@ -20,7 +20,7 @@
 
 4.Built API endpoint for Summarization task with FastAPI 
 
-Documents comparision:
+### Documents comparision:
 
 1.After uploading the two  files (Reference file and  modified file) through front end , it saves the files in the folder with their file names  and paths.
 
@@ -30,7 +30,7 @@ Documents comparision:
 
 4.Built API endpoint for Documents comparision task with FastAPI 
 
-Conversational RAG(Chat with Documents):
+### Conversational RAG(Chat with Documents):
 
 1.Building  Faiss Vector database (Local)index  for uploaded documents type pdf ,docx and text  with specific session id and session folder.
 
