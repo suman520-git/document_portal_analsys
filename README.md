@@ -10,7 +10,8 @@
 
 ##  Project Overview
 
-Summarization task(Document Analsys):
+### Summarization task(Document Analsys):
+
 1.After uploading the pdf file through front end , it saves the pdf file in the folder with file name  and path.
 
 2.Then It  loads the file through saved path and extracts the text data from the pdf file.
