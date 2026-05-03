@@ -1,0 +1,123 @@
+{"timestamp": "2026-05-03T12:44:23.440257Z", "level": "info", "event": "Serving UI homepage."}
+{"timestamp": "2026-05-03T12:44:29.678478Z", "level": "info", "event": "Serving UI homepage."}
+{"timestamp": "2026-05-03T12:55:18.202598Z", "level": "info", "event": "Indexing chat session. Session ID: madhu, Files: ['NIPS-2017-attention-is-all-you-need-Paper.pdf']"}
+{"timestamp": "2026-05-03T12:55:18.205598Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T12:55:18.206608Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T12:55:18.206608Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T12:55:18.208599Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T12:55:18.218603Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "madhu", "temp_dir": "data\\madhu", "faiss_dir": "faiss_index\\madhu", "sessionized": true, "timestamp": "2026-05-03T12:55:18.223601Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "NIPS-2017-attention-is-all-you-need-Paper.pdf", "saved_as": "data\\madhu\\3a6dbe27.pdf", "timestamp": "2026-05-03T12:55:18.229599Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 11, "timestamp": "2026-05-03T12:55:20.102999Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 43, "chunk_size": 1000, "overlap": 200, "timestamp": "2026-05-03T12:55:20.109992Z", "level": "info", "event": "Documents split"}
+{"model": "gemini-embedding-001", "timestamp": "2026-05-03T12:55:20.111988Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+{"added": 1, "index": "faiss_index\\madhu", "timestamp": "2026-05-03T12:55:24.445303Z", "level": "info", "event": "FAISS index updated"}
+{"timestamp": "2026-05-03T12:55:24.450301Z", "level": "info", "event": "Index created successfully for session: madhu"}
+{"timestamp": "2026-05-03T12:57:48.064238Z", "level": "info", "event": "Indexing chat session. Session ID: , Files: ['state_of_the_union.txt']"}
+{"timestamp": "2026-05-03T12:57:48.067244Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T12:57:48.068244Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T12:57:48.069244Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T12:57:48.070239Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T12:57:48.077238Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20260503_182748_88861586", "temp_dir": "data", "faiss_dir": "faiss_index", "sessionized": false, "timestamp": "2026-05-03T12:57:48.082238Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "state_of_the_union.txt", "saved_as": "data\\e4754e02.txt", "timestamp": "2026-05-03T12:57:48.084237Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 1, "timestamp": "2026-05-03T12:57:48.086244Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 49, "chunk_size": 1000, "overlap": 200, "timestamp": "2026-05-03T12:57:48.091239Z", "level": "info", "event": "Documents split"}
+{"model": "gemini-embedding-001", "timestamp": "2026-05-03T12:57:48.093244Z", "level": "info", "event": "Loading embedding model"}
+{"added": 1, "index": "faiss_index", "timestamp": "2026-05-03T12:57:51.693980Z", "level": "info", "event": "FAISS index updated"}
+{"timestamp": "2026-05-03T12:57:51.698996Z", "level": "info", "event": "Index created successfully for session: session_20260503_182748_88861586"}
+{"timestamp": "2026-05-03T13:08:22.335360Z", "level": "info", "event": "Indexing chat session. Session ID: None, Files: ['state_of_the_union.txt']"}
+{"timestamp": "2026-05-03T13:08:22.337358Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T13:08:22.338359Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T13:08:22.339362Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T13:08:22.340362Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T13:08:22.348357Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20260503_183822_7e66c96d", "temp_dir": "data", "faiss_dir": "faiss_index", "sessionized": false, "timestamp": "2026-05-03T13:08:22.350364Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "state_of_the_union.txt", "saved_as": "data\\06c96159.txt", "timestamp": "2026-05-03T13:08:22.353359Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 1, "timestamp": "2026-05-03T13:08:22.354359Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 49, "chunk_size": 1000, "overlap": 200, "timestamp": "2026-05-03T13:08:22.358356Z", "level": "info", "event": "Documents split"}
+{"model": "gemini-embedding-001", "timestamp": "2026-05-03T13:08:22.370324Z", "level": "info", "event": "Loading embedding model"}
+{"added": 1, "index": "faiss_index", "timestamp": "2026-05-03T13:08:23.102943Z", "level": "info", "event": "FAISS index updated"}
+{"timestamp": "2026-05-03T13:08:23.106918Z", "level": "info", "event": "Index created successfully for session: session_20260503_183822_7e66c96d"}
+{"timestamp": "2026-05-03T13:09:11.518111Z", "level": "info", "event": "Received chat query: 'what is attention ' | session: suman"}
+{"timestamp": "2026-05-03T13:10:48.443577Z", "level": "info", "event": "Received chat query: 'what is attention' | session: string"}
+{"timestamp": "2026-05-03T13:11:14.720675Z", "level": "info", "event": "Received chat query: 'what is attention' | session: string"}
+{"timestamp": "2026-05-03T13:11:14.723675Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T13:11:14.724675Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T13:11:14.724675Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T13:11:14.725674Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T13:11:14.733674Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2026-05-03T13:11:14.734674Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "string", "timestamp": "2026-05-03T13:11:14.751674Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "string", "timestamp": "2026-05-03T13:11:14.752674Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2026-05-03T13:11:14.757674Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T13:11:14.758675Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T13:11:14.759673Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T13:11:14.760672Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T13:11:14.773675Z", "level": "info", "event": "YAML config loaded"}
+{"model": "gemini-embedding-001", "timestamp": "2026-05-03T13:11:14.774674Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "string", "timestamp": "2026-05-03T13:11:14.793678Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index", "index_name": "index", "k": 5, "session_id": "string", "timestamp": "2026-05-03T13:11:14.794680Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+{"session_id": "string", "user_input": "what is attention", "answer_preview": "I'm sorry, but the provided text does not contain information about attention.", "timestamp": "2026-05-03T13:11:17.648328Z", "level": "info", "event": "Chain invoked successfully"}
+{"timestamp": "2026-05-03T13:11:17.649322Z", "level": "info", "event": "Chat query handled successfully."}
+{"timestamp": "2026-05-03T13:11:56.162394Z", "level": "info", "event": "Received chat query: 'what is attention' | session: madhu"}
+{"timestamp": "2026-05-03T13:11:56.165401Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T13:11:56.165401Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T13:11:56.166398Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T13:11:56.166398Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T13:11:56.173396Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2026-05-03T13:11:56.174394Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "madhu", "timestamp": "2026-05-03T13:11:56.180395Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "madhu", "timestamp": "2026-05-03T13:11:56.181398Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2026-05-03T13:11:56.185399Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T13:11:56.186398Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T13:11:56.186398Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T13:11:56.187394Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T13:11:56.194394Z", "level": "info", "event": "YAML config loaded"}
+{"model": "gemini-embedding-001", "timestamp": "2026-05-03T13:11:56.195393Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "madhu", "timestamp": "2026-05-03T13:11:56.211394Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\madhu", "index_name": "index", "k": 5, "session_id": "madhu", "timestamp": "2026-05-03T13:11:56.214626Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+{"session_id": "madhu", "user_input": "what is attention", "answer_preview": "Attention mechanisms have become an integral part of compelling sequence modeling and transduction models, allowing modeling of dependencies without r", "timestamp": "2026-05-03T13:11:59.128414Z", "level": "info", "event": "Chain invoked successfully"}
+{"timestamp": "2026-05-03T13:11:59.129424Z", "level": "info", "event": "Chat query handled successfully."}
+{"timestamp": "2026-05-03T13:20:07.844747Z", "level": "info", "event": "Indexing chat session. Session ID: madhu, Files: ['NIPS-2017-attention-is-all-you-need-Paper.pdf']"}
+{"timestamp": "2026-05-03T13:20:07.846748Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T13:20:07.847747Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T13:20:07.848747Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T13:20:07.848747Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T13:20:07.855746Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "madhu", "temp_dir": "data\\madhu", "faiss_dir": "faiss_index\\madhu", "sessionized": true, "timestamp": "2026-05-03T13:20:07.857742Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "NIPS-2017-attention-is-all-you-need-Paper.pdf", "saved_as": "data\\madhu\\40007ef8.pdf", "timestamp": "2026-05-03T13:20:07.862748Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 11, "timestamp": "2026-05-03T13:20:09.234842Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 43, "chunk_size": 1000, "overlap": 200, "timestamp": "2026-05-03T13:20:09.241834Z", "level": "info", "event": "Documents split"}
+{"model": "gemini-embedding-001", "timestamp": "2026-05-03T13:20:09.243830Z", "level": "info", "event": "Loading embedding model"}
+{"added": 1, "index": "faiss_index\\madhu", "timestamp": "2026-05-03T13:20:09.797769Z", "level": "info", "event": "FAISS index updated"}
+{"timestamp": "2026-05-03T13:20:09.800692Z", "level": "info", "event": "Index created successfully for session: madhu"}
+{"timestamp": "2026-05-03T13:20:29.129405Z", "level": "info", "event": "Indexing chat session. Session ID: madhu, Files: ['NIPS-2017-attention-is-all-you-need-Paper.pdf']"}
+{"timestamp": "2026-05-03T13:20:29.132412Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T13:20:29.133403Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T13:20:29.133403Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T13:20:29.134402Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T13:20:29.140402Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "madhu", "temp_dir": "data\\madhu", "faiss_dir": "faiss_index\\madhu", "sessionized": true, "timestamp": "2026-05-03T13:20:29.143403Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "NIPS-2017-attention-is-all-you-need-Paper.pdf", "saved_as": "data\\madhu\\7ade7972.pdf", "timestamp": "2026-05-03T13:20:29.157042Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 11, "timestamp": "2026-05-03T13:20:30.198355Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 43, "chunk_size": 1000, "overlap": 200, "timestamp": "2026-05-03T13:20:30.206355Z", "level": "info", "event": "Documents split"}
+{"model": "gemini-embedding-001", "timestamp": "2026-05-03T13:20:30.209398Z", "level": "info", "event": "Loading embedding model"}
+{"added": 1, "index": "faiss_index\\madhu", "timestamp": "2026-05-03T13:20:30.771710Z", "level": "info", "event": "FAISS index updated"}
+{"timestamp": "2026-05-03T13:20:30.775702Z", "level": "info", "event": "Index created successfully for session: madhu"}
+{"timestamp": "2026-05-03T13:20:39.164660Z", "level": "info", "event": "Indexing chat session. Session ID: madhu, Files: ['NIPS-2017-attention-is-all-you-need-Paper.pdf']"}
+{"timestamp": "2026-05-03T13:20:39.167659Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-03T13:20:39.168655Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-03T13:20:39.169654Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-03T13:20:39.169654Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-03T13:20:39.176655Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "madhu", "temp_dir": "data\\madhu", "faiss_dir": "faiss_index\\madhu", "sessionized": true, "timestamp": "2026-05-03T13:20:39.179659Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "NIPS-2017-attention-is-all-you-need-Paper.pdf", "saved_as": "data\\madhu\\62c8c9bd.pdf", "timestamp": "2026-05-03T13:20:39.182660Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 11, "timestamp": "2026-05-03T13:20:40.165354Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 43, "chunk_size": 1000, "overlap": 200, "timestamp": "2026-05-03T13:20:40.172354Z", "level": "info", "event": "Documents split"}
+{"model": "gemini-embedding-001", "timestamp": "2026-05-03T13:20:40.175358Z", "level": "info", "event": "Loading embedding model"}
+{"added": 1, "index": "faiss_index\\madhu", "timestamp": "2026-05-03T13:20:40.889947Z", "level": "info", "event": "FAISS index updated"}
+{"timestamp": "2026-05-03T13:20:40.892943Z", "level": "info", "event": "Index created successfully for session: madhu"}

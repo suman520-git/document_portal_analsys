@@ -1,26 +1,45 @@
 # Document Portal Analsys
 
-A Agentic RAG system that retrieves product reviews and price details from the database or from websearch  for the given query bythe customer about the products like electronic goods etc.
+1.  Summarizattion of the data: A system ,it summarises the uploaded pdf file  by the user.
+
+2.  Documents Comparision: When two files  reference and modified files upload to application ,it returns the  
+    modified data  with repect to refernce file with page number and  data.
+
+3. Chatting with Documents: Creation of vector database(FAISS) index with uploaded  documents with session id and session folder and chatting with documents
+    through retrieving data from vector database.
 
 ##  Project Overview
 
-1.Web Scraping the FlipKart ecommerce platform for the given products search to save  product details and reviews in CSV file.
+Summarization task(Document Analsys):
+1.After uploading the pdf file through front end , it saves the pdf file in the folder with file name  and path.
 
-2.Data Ingestion:Converting the CSV data in to vector form and storing in ASTRA DB(cloud form) vectore store later used s a retriever.
+2.Then It  loads the file through saved path and extracts the text data from the pdf file.
 
-3.Converting retriver as tool for data retrieval in RAG system
+3.The extracted text data is sent to the LLM with prompt to get summary of the data.
 
-4.Adding duckduckgo as a web searching tool.
+4.Built API endpoint for Summarization task with FastAPI 
 
-5.Binding LLM with retriver tool and duckduckgo tool
+Documents comparision:
 
-6.Building  an agentic RAG system(Corrective RAG) that can decide when to use the retriever tool and web search tool.
+1.After uploading the two  files (Reference file and  modified file) through front end , it saves the files in the folder with their file names  and paths.
 
-7.Building API endpoints for retrieval pipeline with FastAPI 
+2.Two files will be loaded and extracted text data from the Reference and Modified files  and combined two files text data.
 
-8.Creation of streamlit app file for front end web scraping and Data Ingestion pipelines.
+3.The combined text data is sent to the LLM with prompt to get  data  which is modified from refernce data with page number and line number
 
-9.Webscraping ,Data Ingestion and response generation are decoupled pipelines.
+4.Built API endpoint for Documents comparision task with FastAPI 
+
+Conversational RAG(Chat with Documents):
+
+1.Building  Faiss Vector database (Local)index  for uploaded documents type pdf ,docx and text  with specific session id and session folder.
+
+2.Uploading files from front end to  vector index.
+
+3.Built API endpoint to built vector index through FastAPI. 
+
+4.Chat with documents with  stored session id from front end.
+
+5.Built API endpoint to chat with documents through FastAPI. 
 
 
 

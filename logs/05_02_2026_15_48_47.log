@@ -1,0 +1,53 @@
+{"timestamp": "2026-05-02T10:18:49.608117Z", "level": "info", "event": "Serving UI homepage."}
+{"timestamp": "2026-05-02T10:51:40.071196Z", "level": "info", "event": "Received file for analysis: market_analysis_report.docx"}
+{"session_id": "session_20260502_162140_f8c3d8b2", "session_path": "D:\\document_portal_analsys\\data\\document_analysis\\session_20260502_162140_f8c3d8b2", "timestamp": "2026-05-02T10:51:40.076188Z", "level": "info", "event": "DocHandler initialized"}
+{"error": "Invalid file type. Only PDFs are allowed.", "session_id": "session_20260502_162140_f8c3d8b2", "timestamp": "2026-05-02T10:51:40.076188Z", "level": "error", "event": "Failed to save PDF"}
+{"exc_info": true, "timestamp": "2026-05-02T10:51:40.079188Z", "level": "error", "event": "Error during document analysis"}
+{"timestamp": "2026-05-02T11:06:48.092633Z", "level": "info", "event": "Received file for analysis: NIPS-2017-attention-is-all-you-need-Paper.pdf"}
+{"session_id": "session_20260502_163648_1bb11f69", "session_path": "D:\\document_portal_analsys\\data\\document_analysis\\session_20260502_163648_1bb11f69", "timestamp": "2026-05-02T11:06:48.094636Z", "level": "info", "event": "DocHandler initialized"}
+{"file": "NIPS-2017-attention-is-all-you-need-Paper.pdf", "save_path": "D:\\document_portal_analsys\\data\\document_analysis\\session_20260502_163648_1bb11f69\\NIPS-2017-attention-is-all-you-need-Paper.pdf", "session_id": "session_20260502_163648_1bb11f69", "timestamp": "2026-05-02T11:06:48.096636Z", "level": "info", "event": "PDF saved successfully"}
+{"pdf_path": "D:\\document_portal_analsys\\data\\document_analysis\\session_20260502_163648_1bb11f69\\NIPS-2017-attention-is-all-you-need-Paper.pdf", "session_id": "session_20260502_163648_1bb11f69", "pages": 11, "timestamp": "2026-05-02T11:06:48.375202Z", "level": "info", "event": "PDF read successfully"}
+{"timestamp": "2026-05-02T11:06:48.378201Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-02T11:06:48.379202Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-02T11:06:48.379202Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-02T11:06:48.381558Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-02T11:06:48.389875Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2026-05-02T11:06:48.395403Z", "level": "info", "event": "Loading LLM"}
+{"timestamp": "2026-05-02T11:06:48.491069Z", "level": "info", "event": "DocumentAnalyzer initialized successfully"}
+{"timestamp": "2026-05-02T11:06:48.493759Z", "level": "info", "event": "Meta-data analysis chain initialized"}
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2 seconds as it raised PermissionDenied: 403 Your API key was reported as leaked. Please use another API key..
+{"error": "403 Your API key was reported as leaked. Please use another API key.", "timestamp": "2026-05-02T11:06:51.487564Z", "level": "error", "event": "Metadata analysis failed"}
+{"exc_info": true, "timestamp": "2026-05-02T11:06:51.536510Z", "level": "error", "event": "Error during document analysis"}
+{"timestamp": "2026-05-02T11:07:37.139464Z", "level": "info", "event": "Serving UI homepage."}
+{"timestamp": "2026-05-02T15:50:33.461406Z", "level": "info", "event": "Comparing files: Long_Report_V1.pdf vs Long_Report_V2.pdf"}
+{"session_path": "data\\document_compare\\session_20260502_212033_2161fb0f", "timestamp": "2026-05-02T15:50:33.475460Z", "level": "info", "event": "DocumentComparator initialized"}
+{"reference": "data\\document_compare\\session_20260502_212033_2161fb0f\\Long_Report_V1.pdf", "actual": "data\\document_compare\\session_20260502_212033_2161fb0f\\Long_Report_V2.pdf", "session": "session_20260502_212033_2161fb0f", "timestamp": "2026-05-02T15:50:33.481990Z", "level": "info", "event": "Files saved"}
+{"file": "data\\document_compare\\session_20260502_212033_2161fb0f\\Long_Report_V1.pdf", "pages": 1, "timestamp": "2026-05-02T15:50:33.526335Z", "level": "info", "event": "PDF read successfully"}
+{"file": "data\\document_compare\\session_20260502_212033_2161fb0f\\Long_Report_V2.pdf", "pages": 1, "timestamp": "2026-05-02T15:50:33.536954Z", "level": "info", "event": "PDF read successfully"}
+{"count": 2, "session": "session_20260502_212033_2161fb0f", "timestamp": "2026-05-02T15:50:33.537961Z", "level": "info", "event": "Documents combined"}
+{"timestamp": "2026-05-02T15:50:33.551488Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-02T15:50:33.552481Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-02T15:50:33.552481Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-02T15:50:33.552481Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-02T15:50:33.572541Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2026-05-02T15:50:33.574540Z", "level": "info", "event": "Loading LLM"}
+{"model": "ChatGoogleGenerativeAI(model='models/gemini-2.0-flash', google_api_key=SecretStr('**********'), temperature=0.0, max_output_tokens=2048, client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002A7046D8B90>, default_metadata=(), model_kwargs={})", "timestamp": "2026-05-02T15:50:33.633378Z", "level": "info", "event": "DocumentComparatorLLM initialized"}
+{"timestamp": "2026-05-02T15:50:33.646955Z", "level": "info", "event": "Invoking document comparison LLM chain"}
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2 seconds as it raised PermissionDenied: 403 Your API key was reported as leaked. Please use another API key..
+{"error": "403 Your API key was reported as leaked. Please use another API key.", "timestamp": "2026-05-02T15:50:36.497155Z", "level": "error", "event": "Error in compare_documents"}
+{"exc_info": true, "timestamp": "2026-05-02T15:50:36.511648Z", "level": "error", "event": "Comparison failed"}
+{"timestamp": "2026-05-02T15:59:52.774063Z", "level": "info", "event": "Received file for analysis: Long_Report_V2.pdf"}
+{"session_id": "session_20260502_212952_e7155ed4", "session_path": "D:\\document_portal_analsys\\data\\document_analysis\\session_20260502_212952_e7155ed4", "timestamp": "2026-05-02T15:59:52.786863Z", "level": "info", "event": "DocHandler initialized"}
+{"file": "Long_Report_V2.pdf", "save_path": "D:\\document_portal_analsys\\data\\document_analysis\\session_20260502_212952_e7155ed4\\Long_Report_V2.pdf", "session_id": "session_20260502_212952_e7155ed4", "timestamp": "2026-05-02T15:59:52.788880Z", "level": "info", "event": "PDF saved successfully"}
+{"pdf_path": "D:\\document_portal_analsys\\data\\document_analysis\\session_20260502_212952_e7155ed4\\Long_Report_V2.pdf", "session_id": "session_20260502_212952_e7155ed4", "pages": 1, "timestamp": "2026-05-02T15:59:52.798393Z", "level": "info", "event": "PDF read successfully"}
+{"timestamp": "2026-05-02T15:59:52.803392Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2026-05-02T15:59:52.804388Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2026-05-02T15:59:52.804388Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_vP...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2026-05-02T15:59:52.805386Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["faiss_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-05-02T15:59:52.816910Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2026-05-02T15:59:52.817953Z", "level": "info", "event": "Loading LLM"}
+{"timestamp": "2026-05-02T15:59:52.828995Z", "level": "info", "event": "DocumentAnalyzer initialized successfully"}
+{"timestamp": "2026-05-02T15:59:52.830000Z", "level": "info", "event": "Meta-data analysis chain initialized"}
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2 seconds as it raised PermissionDenied: 403 Your API key was reported as leaked. Please use another API key..
+{"error": "403 Your API key was reported as leaked. Please use another API key.", "timestamp": "2026-05-02T15:59:55.588502Z", "level": "error", "event": "Metadata analysis failed"}
+{"exc_info": true, "timestamp": "2026-05-02T15:59:55.595474Z", "level": "error", "event": "Error during document analysis"}
