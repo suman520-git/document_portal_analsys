@@ -42,10 +42,6 @@
 5.Built API endpoint to chat with documents through FastAPI. 
 
 
-
-## Corrective RAG workflow
-![image alt](https://github.com/suman520-git/ecomm-prod-assistant/blob/main/corrective%20Rag.png?raw=true)
-
 ## Project Structure
 ```
 document_portal_analsys                                    
@@ -293,14 +289,14 @@ step.1 uvicorn api.main:app --port 8080 --reload
 ### 4.  Dockerization
 ```bash
 # Build Docker Image
-step.1 docker build -t prod-assistant .
+step.1 docker build -t doc-analsys .
 
 #Run Docker Container
-step.2 docker run -d -p 8000:8000 --name product-assistant prod-assistant
+step.2 docker run -d -p 8080:8080 --name document-analsys doc-analsys
 
 ```
 
-## 🆘 Support
+## 🆘 Deployment on AWS(ECS Fargate)
 
 For issues and questions:
 1. Review the configuration settings
