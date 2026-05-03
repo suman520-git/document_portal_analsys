@@ -154,11 +154,7 @@ document_portal_analsys
 │  └─ __init__.py                                          
 ├─ logs                                                    
 │  ├─ 03_15_2026_22_10_15.log                              
-│                             
-│                             
-│                              
-│                              
-│                             
+│                                                                    
 ├─ model                                                   
 │  ├─ __pycache__                                          
 │  │  └─ models.cpython-311.pyc                            
@@ -249,11 +245,11 @@ document_portal_analsys
 
 ```bash
 # Clone the repository
-git clone https://github.com/suman520-git/ecomm-prod-assistant.git
-cd ecomm-prod-assistant
+git clone https://github.com/suman520-git/document_portal_analsys.git
+cd document_portal_analsys
 
 # Create virtual environment
-conda create -p venv python==3.10 -y
+conda create -p venv python==3.11 -y
 conda activate venv/ 
 
 # Install dependencies
@@ -268,36 +264,21 @@ pip install -r requirements.txt
 
 # Edit .env with your API keys
 # Required:
-# - ASTRA_DB_API_ENDPOINT="xxx"
-# - ASTRA_DB_APPLICATION_TOKEN="xxx"
-# - ASTRA_DB_KEYSPACE="default_keyspace"
+
 # - GOOGLE_API_KEY="xxxx"
-# - OPENAI_API_KEY="xxxx"
+# - GROQ_API_KEY="xxxx"
 ```
 
 ### 3. API Usage
 
 ```bash
-# For web scraping(Decoupled,Independent of Main RAG pipeline)
-step.1 streamlit run /ecomm_prod_assistant/scrapper_ui.py
+# For application running
+step.1 uvicorn api.main:app --port 8080 --reload 
 
 
 ```
-## Streamlit UI(For Web Scraping and Data Ingestion)
+## Application UI(For Document Analsys)
 ![image alt](https://github.com/suman520-git/ecomm-prod-assistant/blob/main/Streamlit_ui.png?raw=true)
-
-```bash
-#Steps to the run the application(from root folder):
-
-# first run the MCP server
-step.1 python  .\ecomm-prod-assistant\prod_assistant\mcp_servers\product_search_server.py
-
-
-
-# start the FastAPI server for the app to start 
-step.2 uvicorn prod_assistant.router.main:app --reload --port 8000
-# Visit http://localhost:8000
-
 
 
 ```
