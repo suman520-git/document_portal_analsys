@@ -298,7 +298,7 @@ step.2 docker run -d -p 8080:8080 --name document-analsys doc-analsys
 
 ## 🆘 Deployment on AWS(ECS Fargate)
 
-Repository secrets
+configure IAM user keys on github to establish connection between Gitgub and AWS.
 
 1. AWS_ACCESS_KEY_ID = "xxxxx"
 2. AWS_SECRET_ACCESS_KEY = "xxxxx"
