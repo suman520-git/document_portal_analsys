@@ -298,10 +298,10 @@ step.2 docker run -d -p 8080:8080 --name document-analsys doc-analsys
 
 ## 🆘 Deployment on AWS(ECS Fargate)
 
-For issues and questions:
-1. Review the configuration settings
-2. Ensure all API keys are properly set
-3. Verify network connectivity to external services
+Repository secrets
+
+1. AWS_ACCESS_KEY_ID = "xxxxx"
+2. AWS_SECRET_ACCESS_KEY = "xxxxx"
 
 ---
 
